@@ -1,4 +1,5 @@
-'''https://leetcode.com/problems/arithmetic-slices/description/'''
+"""https://leetcode.com/problems/arithmetic-slices/description/"""
+
 
 class Solution:
     def numberOfArithmeticSlices(self, nums: List[int]) -> int:

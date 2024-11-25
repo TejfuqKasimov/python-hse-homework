@@ -1,4 +1,5 @@
-'''https://leetcode.com/problems/minimum-size-subarray-sum/description/'''
+"""https://leetcode.com/problems/minimum-size-subarray-sum/description/"""
+
 
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:

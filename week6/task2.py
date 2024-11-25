@@ -1,4 +1,5 @@
-'''https://leetcode.com/problems/repeated-dna-sequences/description/'''
+"""https://leetcode.com/problems/repeated-dna-sequences/description/"""
+
 
 class Solution:
     def findRepeatedDnaSequences(self, s: str) -> List[str]:

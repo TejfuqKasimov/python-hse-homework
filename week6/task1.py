@@ -1,8 +1,10 @@
-'''https://leetcode.com/problems/grumpy-bookstore-owner/description/'''
+"""https://leetcode.com/problems/grumpy-bookstore-owner/description/"""
+
 
 class Solution:
     def maxSatisfied(
-        self, customers: List[int], grumpy: List[int], minutes: int) -> int:
+        self, customers: List[int], grumpy: List[int], minutes: int
+    ) -> int:
         mx = cnt = sum(c * g for c, g in zip(customers[:minutes], grumpy))
         for i in range(minutes, len(customers)):
             cnt += customers[i] * grumpy[i]

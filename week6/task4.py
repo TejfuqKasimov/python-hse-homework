@@ -1,9 +1,12 @@
-'''https://leetcode.com/problems/contains-duplicate-iii/description/'''
+"""https://leetcode.com/problems/contains-duplicate-iii/description/"""
 
 from sortedcontainers import SortedSet
+
+
 class Solution:
     def containsNearbyAlmostDuplicate(
-        self, nums: List[int], indexDiff: int, valueDiff: int) -> bool:
+        self, nums: List[int], indexDiff: int, valueDiff: int
+    ) -> bool:
         s = SortedSet()
         for i, v in enumerate(nums):
             j = s.bisect_left(v - valueDiff)
